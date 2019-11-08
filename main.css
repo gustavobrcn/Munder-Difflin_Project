@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+}
+
+#navbar {
+  background-color: red;
+  display: grid;
+  grid-template: 10% / repeat(7, 10%);
+  margin-bottom: 0;
+}
+
+#intro {
+  background-color: rgb(198, 207, 205);
+  margin-top: 0;
+}
+
+.package1 {
+  background-color: green;
+}
+
+.package2 {
+  background-color: rgb(56, 235, 178);
+}
+
+.package3 {
+  background-color: rgb(16, 81, 170);
+}
+
+.package4 {
+  background-image: url('images/spotlight.png');
+  color: white;
+}
