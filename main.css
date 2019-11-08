@@ -30,3 +30,7 @@ body {
   background-image: url('images/spotlight.png');
   color: white;
 }
+
+
+/* set each package to display none and then in javascript add an event on scrolldown to show the next package */
+/* place the text over the background with transparent background so that the text can be seen properly with the background imgaes */
