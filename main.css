@@ -1,35 +1,91 @@
 body {
   margin: 0;
-}
+  }
+
 
 #navbar {
-  background-color: red;
+  background-color: white;
   display: grid;
-  grid-template: 10% / repeat(7, 10%);
-  margin-bottom: 0;
+  grid-template: 25px / 8% 5% 7% 65% 5% 5% 5%;
+  width: 100vw;
+  padding: 15px;
+  font-family: Helvetica;
+  font-weight: 500;
+  position:fixed;
+  font-size: 11pt;
+  }
+
+a {
+  text-decoration: none;
+  color: black;
 }
+
+.logo {
+  height: 50px;
+  width: 40px;
+  margin-top: -14px;
+  margin-left: 10px;
+}
+
+.cart {
+  height: 30px;
+  width: 35px;
+  margin-top: -5px;
+}
+
+/* #content {
+    height: calc(100vh - 204px);
+} */
 
 #intro {
-  background-color: rgb(198, 207, 205);
-  margin-top: 0;
-  display: ;
+  color: white;
+  background-image: url('images/main.jpg');
+  overflow: hidden;
+  font-family: Helvetica;
+  overflow:hidden;
+  /* height:100%; */
+  height: calc(100vh - 204px);
+  text-align: center;
+  padding-top: 209px;
+  padding-bottom: 0;
 }
 
+#intro h1 {
+  font-size: 60pt;
+}
+
+
 .package1 {
-  background-color: green;
+  background-image: url('images/tree_huger.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* position: absolute; */
+  font-family: Helvetica;
+  display: none;
 }
 
 .package2 {
-  background-color: rgb(56, 235, 178);
+  background-image: url('images/duality.jpg');
+  font-family: Helvetica;
+  display: none;
+  /* position: absolute; */
 }
 
 .package3 {
-  background-color: rgb(16, 81, 170);
+  background-image: url('images/deforestation1.jpg');
+  font-family: Helvetica;
+  display: none;
+  /* position: absolute; */
 }
 
 .package4 {
-  background-image: url('images/spotlight.png');
+  background-image: url('images/under_the_table.jpg');
+  background-repeat: no-repeat;
+  font-family: Helvetica;
   color: white;
+  display: none;
+  /* position: absolute; */
 }
 
 
