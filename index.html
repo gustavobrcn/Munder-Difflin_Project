@@ -2,58 +2,82 @@
 <html lang="en" dir="ltr">
   <head>
     <link rel="stylesheet" href="main.css">
-    <link rel="icon" href="https://www.shareicon.net/data/256x256/2015/10/24/661128_paper_512x512.png" type="image/x-icon">
+    <link rel="icon" href="images/paper_icon.png" type="image/x-icon">
     <meta charset="utf-8">
     <title>Munder Difflin Inc.</title>
   </head>
-  <body>
-    <div id="navbar">
-      <div><a href="#"><img class="logo" src="https://www.shareicon.net/data/256x256/2015/10/24/661128_paper_512x512.png"=alt=""></a></div>
-      <div class=""><a href="#">💰 Pricing</a></div>
-      <div class=""><a href="#">🗺️ Track Orders</a></div>
-      <div class=""><a href="#">📦 Products</a></div>
-      <div class=""><a href="#">💻 Log in</a></div>
-      <div class=""><a href="#">📝 Sign Up</a></div>
-      <div><a href="#"><img class="cart" src="https://png.pngtree.com/svg/20160720/shopping_bag__1096345.png" alt=""></a> </div>
+  <body class="">
+    <nav id="navbar">
+      <div class='flex'>
+      <div class="item"><a href="#"><img class="logo" src="images/paper_icon.png"=alt="">
+          <div class="name">Munder Difflin Inc.</div>
+      </a></div>
+      <div class="item"><a href="#">💰 Pricing</a></div>
+      <div class="item"><a href="#">🗺️ Track Orders</a></div>
+      <div class="item"><a href="#">📦 Products</a></div>
     </div>
+      <div class='flex'>
+      <div class="item"><a href="#">💻 Log in</a></div>
+      <div class="item"><a href="#">📝 Sign Up</a></div>
+      <div class="item"><a href="#"><img class="cart" src="images/cart_icon.png" alt=""></a></div>
+    </div>
+    </nav>
 
-    <section id="intro">
+
+  <div id="container">
+    <section class="center package active" id="intro">
+      <div class="glass">
       <h1>Munder Difflin Inc.</h1>
       <h2>All kinds of paper for all kinds of people.</h2>
-      <p>We custom make your paper from the largest selection of materials you can find anywhere. We make sure that you are involved at every step of the process to ensure 100% customer satisfaction</p>
+      <p>We custom make your paper from the largest selection of materials you can find anywhere. <br> We make sure that you are involved at every step of the process to ensure 100% customer satisfaction.</p>
+    </div>
     </section>
 
-    <section id="content">
-      <div id="package1">
+
+      <section id="package1" class="package left">
+        <div class="glass">
         <h1>Tree Huger</h1>
-        <p>Made from purely recycled materials. We have consulted with the most influencial and stringent environmentalists, in association with the most notorious ecoterrorist in the world, to ensure the most environmentally friendly biodegradable paper. Hipsters and elitist environmentalists rejoice! This is the package for you.</p>
-        <button id="btn-1">Build your package 🌲❤️️</button>
-
+        <p>Made from purely recycled materials.</p><p>We have consulted with the most influencial, stringent, and notorious environmentalists and ecoterrorist in the world, to ensure the most environmentally friendly biodegradable paper.</p><p>Hipsters and elitist environmentalists rejoice! This is the package for you.</p>
+        <button id="btn-1">Build Your Package 🌲❤️️</button>
       </div>
+      </section>
 
-      <div id="package2">
+      <section id="package2" class="package right">
+        <div class="glass">
         <h1>Duality</h1>
-        <p>All that save the environment stuff eating into your profits but you dont want the government and hippies comming down on you? The duality package is right up your ally. We use half recycled and half fresh materials to construct the perfectly balanced paper of your environmentally ambivalent dreams.</p>
-        <button id="btn-2">Build your package 🌲🤷‍♂️</button>
-        <!-- shrugging and tree emoji on button -->
-      </div>
+        <p>All that save the environment stuff eating into your profits but you dont want the government and hippies comming down on you? The duality package is right up your ally.</p><p>We use half recycled and half fresh materials to construct the perfectly balanced paper of your environmentally ambivalent dreams.</p>
+        <button id="btn-2">Build Your Package 🌲🤷‍♂️</button>
+        </div>
+      </section>
 
-      <div id="package3">
+      <section id="package3" class="package center">
+        <div class="glass">
         <h1>Expedited Deforestation</h1>
-        <p>Completely apathetic about the environment and the sustainability of future generations? Do you only settle for the premium option? Then this package is right for you! We consulted with lawyers to bring our clients the maximum legal limit of trees you can use to make 1 sheet of paper. We use the finest trees to bring you the highest quality paper money can buy.</p>
-        <button id="btn-3">Build your package 🌲🪓</button>
-
-      </div>
-
-      <div id="package4">
-        <h1>Under The Table</h1>
-        <p>We understand that there may be those that use less..."conventional" methods and materials for their papaer. We provide services through a certain 'dark colored' market to help acomidate our clients with those pecular needs.</p>
-        <button id="btn-4">Open in tor browser 🧥🕴</button>
-
+        <p>Completely apathetic about the environment and the sustainability of future generations? <br>Do you only settle for the premium option? Then this package is right for you!</p><p>We consulted with lawyers to bring our clients the maximum legal limit of trees you can use to make 1 sheet of paper.<br>We use the finest trees to bring you the highest quality paper money can buy.</p>
+        <button id="btn-3">Build Your Package 🌲🪓</button>
       </div>
     </section>
 
-    <footer></footer>
+      <section id="package4" class="package center">
+        <div class="glass">
+        <h1>Under The Table</h1>
+        <p>We understand that there may be those that use less..."conventional" methods and materials for their paper.<br>We provide services through a certain "dark colored" market to help acomidate our clients with those pecular needs.</p>
+        <button id="btn-4">Open In Tor Browser 🧥🕴</button>
+      </div>
+      </section>
+
+  </div>
+
+    <!-- <footer><a href="#">&copy;Munder Difflin Inc.</a>
+      <a href="#">Features</a>
+      <a href="#">Pricing</a>
+      <a href="#">Contact</a>
+      <a href="#">FAQs</a>
+      <a href="#">Terms</a>
+      <a href="#">Privacy</a>
+      <a href="#"><img src="images/facebook_logo.png" alt=""> </a>
+      <a href="#"><img src="images/twitter_logo.png" alt=""></a>
+    </footer> -->
   <script src="main.js"></script>
   </body>
 </html>

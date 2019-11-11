@@ -1,22 +1,26 @@
-console.log('Java is working');
-// btn1 = document.getElementById('btn-1')
-//
-// btn1.addEventListener('click', () => {
-//   document.getElementById('package1').className = ('package1')
-// })
+let currentPackage = 0
 
-// variables for elements
-btn0 = document.getElementById('btn-0')
-btn1 = document.getElementById('btn-1')
-btn2 = document.getElementById('btn-2')
-btn3 = document.getElementById('btn-3')
-btn4 = document.getElementById('btn-4')
-pkg1 = document.getElementById('package1')
-pkg2 = document.getElementById('package2')
-pkg3 = document.getElementById('package3')
-pkg4 = document.getElementById('package4')
+const changePackage = () => {
+  document.querySelector('.package.active').classList.remove('active')
+  document.querySelectorAll('.package')[currentPackage].classList.add('active')
+}
 
-document.getElementById('package1').className = ('package1')
-document.getElementById('package2').className = ('package2')
-document.getElementById('package3').className = ('package3')
-document.getElementById('package4').className = ('package4')
+
+window.addEventListener('mousewheel', (e) =>{
+  let isScrollingDown = e.deltaY > 0;
+    if (isScrollingDown && currentPackage < 4) {
+        currentPackage += 1
+        changePackage();
+    }
+    else if (!isScrollingDown && currentPackage > 0){
+
+      currentPackage -= 1
+      changePackage();
+    }
+    // if (currentPackage === 4) {
+    //   document.querySelector('body').classList.add('scroll')
+    // }
+    // else {
+    //   document.querySelector('body').classList.remove('scroll')
+    // }
+})
