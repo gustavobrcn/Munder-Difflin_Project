@@ -17,10 +17,10 @@ window.addEventListener('mousewheel', (e) =>{
       currentPackage -= 1
       changePackage();
     }
-    // if (currentPackage === 4) {
-    //   document.querySelector('body').classList.add('scroll')
-    // }
-    // else {
-    //   document.querySelector('body').classList.remove('scroll')
-    // }
+    if (currentPackage === 4) {
+      document.querySelector('footer').classList.add('active')
+    }
+    else {
+      document.querySelector('footer').classList.remove('active')
+    }
 })
