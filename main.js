@@ -7,12 +7,12 @@ const changePackage = () => {
 
 
 window.addEventListener('mousewheel', (e) =>{
-  let isScrollingDown = e.deltaY > 0;
-    if (isScrollingDown && currentPackage < 4) {
+  let ScrollingDown = e.deltaY > 0;
+    if (ScrollingDown && currentPackage < 4) {
         currentPackage += 1
         changePackage();
     }
-    else if (!isScrollingDown && currentPackage > 0){
+    else if (!ScrollingDown && currentPackage > 0){
 
       currentPackage -= 1
       changePackage();
