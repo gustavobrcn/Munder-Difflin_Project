@@ -4,6 +4,18 @@ body {
   overflow: hidden;
   }
 
+  /* -----Animations----- */
+  @keyframes drop {
+    from {top:-50px}
+    to {top:0px}
+  }
+
+  @keyframes appear {
+    from {opacity: 0}
+    to {opacity: 1}
+  }
+
+/* -------------------------------------Navbar------------------------------------- */
 #navbar {
     background-color: #0000008a;
     box-sizing: border-box;
@@ -19,30 +31,7 @@ body {
     z-index: 2;
     top: -50px;
     animation: drop 1.75s .5s forwards;
-
 }
-
-@keyframes drop {
-  from {top:-50px}
-  to {top:0px}
-}
-
-@keyframes appear {
-  from {opacity: 0}
-  to {opacity: 1}
-}
-
-.name {
-  padding-top: 3px;
-}
-
-  .flex{
-    display: flex;
-  }
-  .flex div{
-    margin-left: 10px;
-    margin-right: 30px;
-  }
 
 a {
   display: flex;
@@ -50,11 +39,22 @@ a {
   color: white;
 }
 
-#container {
-  overflow: auto;
-  height: 100vh;
+
+.company-name {
+  padding-top: 3px;
 }
 
+/* -----Spreading the elements in the navbar----- */
+.flex{
+    display: flex;
+  }
+
+.flex div{
+    margin-left: 10px;
+    margin-right: 30px;
+  }
+
+/* -----Sizing for logo and cart images----- */
 .logo {
   height: 50px;
   width: 40px;
@@ -68,6 +68,15 @@ a {
   margin-top: -5px;
 }
 
+/* -------------------------------------Page Content------------------------------------- */
+
+/* -----Provides size for the content on the page----- */
+#container {
+  overflow: auto;
+  height: 100vh;
+}
+
+/* -----Styling for intro and the packages----- */
 .package {
   color: white;
   box-sizing: border-box;
@@ -82,18 +91,12 @@ a {
   position: fixed;
   width: 100%;
   opacity: 0;
-  /* display: none; */
 }
 
 .package.active {
   animation: appear 3s forwards;
   z-index: 1;
 }
-
-#intro {
-  background-image: url('images/main.jpg');
-}
-
 
 .package h1 {
   margin: 0;
@@ -111,6 +114,7 @@ a {
   margin: 10px 0;
 }
 
+/* -----Blured background styling for package descriptions----- */
 .glass {
   padding: 20px;
   backdrop-filter: blur(10px) brightness(.8);
@@ -118,12 +122,14 @@ a {
   animation: appear 2s 1s forwards;
 }
 
+/* -----Places the package descriptions in the center----- */
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/* -----Places the package descriptions on the left----- */
 .left {
   display: flex;
   justify-content: flex-start;
@@ -136,6 +142,7 @@ a {
   width: 40%;
 }
 
+/* -----Places the package descriptions on the right----- */
 .right {
   display: flex;
   justify-content: flex-end;
@@ -147,17 +154,9 @@ a {
   margin-right: 30px;
 }
 
-button {
-  padding: 10px;
-  border-radius: 6px;
-  font-size: 14pt;
-  font-family: Helvetica;
-  background-color: #abb0e5b8;
-}
-
-button:hover {
-  background-color: #767aa4b8;
-  cursor: pointer;
+/* -----Background images for each section----- */
+#intro {
+  background-image: url('images/main.jpg');
 }
 
 #package1 {
@@ -187,6 +186,21 @@ button:hover {
   position: relative;
 }
 
+/* -----Button Styling----- */
+button {
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14pt;
+  font-family: Helvetica;
+  background-color: #abb0e5b8;
+}
+
+button:hover {
+  background-color: #767aa4b8;
+  cursor: pointer;
+}
+
+/* -------------------------------------Footer------------------------------------- */
 footer {
   display: flex;
   justify-content: center;
@@ -212,4 +226,4 @@ bottom: 0px;
 
 .social-media {
   height: 30px;
-  }
+}
